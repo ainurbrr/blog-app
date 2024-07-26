@@ -1,0 +1,49 @@
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-registration input{
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #245d51;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #245d51 !Important;
+    border: solid 1px #245d51 !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #245d51 !Important;
+    border: solid 1px #245d51;
+}
