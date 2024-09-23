@@ -13,7 +13,6 @@ class Post extends Model
 {
     use HasFactory, Sluggable;
 
-
     protected $guarded = ['id'];
     protected $with = ['author', 'category'];
 
@@ -51,6 +50,7 @@ class Post extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
+    //Change key
     public function getRouteKeyName(): string
     {
         return 'slug';

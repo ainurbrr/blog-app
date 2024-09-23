@@ -95,8 +95,8 @@
                                     <button class="signup-btn btn-1" type="submit">Login Now</button>
                                     <span class="divider">OR</span>
                                     <button class="signup-btn"><img class="mr-20" src="/img//user/icon/google.svg"
-                                            alt="icon"> Login With
-                                        Google</button>
+                                            alt="icon"> <a href="{{ route('oauth.google') }}">Continue With
+                                                Google</a></button>
                                 </div>
                                 <div class="redirect-section text-center">
                                     <small class="d-block text-center mt-4">Not Registered? <a href="/register" class="text-secondary">Register now</a></small>

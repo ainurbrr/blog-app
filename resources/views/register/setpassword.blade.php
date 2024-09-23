@@ -63,12 +63,12 @@
                     <div class="signup-form">
                         <div class="section-title text-center mb-50">
                             <div class="title">
-                                <h2>Create Your Account</h2>
+                                <h2>Set Your Password</h2>
                             </div>
                         </div>
-                        <form id="registerForm" action="/register" method="post">
+                        <form id="registerForm" action="/set-password" method="post">
                             @csrf
-                            <div class="input-wrap mb-20">
+                            {{-- <div class="input-wrap mb-20">
                                 <span><img src="/img/user/icon/profile.svg" alt="icon"></span>
                                 <input input type="text" name="name"
                                     class="form-control rounded-top @error('name') is-invalid @enderror" id="name"
@@ -100,7 +100,7 @@
                                         {{ $message }}
                                     </div>
                                 @enderror
-                            </div>
+                            </div> --}}
                             <div class="input-wrap pass mb-20">
                                 <span><img src="/img/user/icon/lock-bold.svg" alt="icon"></span>
                                 <input type="password" name="password"
@@ -123,20 +123,20 @@
                                     </div>
                                 @enderror
                             </div>
-                            <div class="input-check mb-20">
+                            {{-- <div class="input-check mb-20">
                                 <input type="checkbox" id="terms">
                                 <span>I have read and agree to the Terms & Conditions</span>
                                 <div class="invalid-feedback" id="terms-error" style="display: none;">
                                     You must agree to the terms and conditions.
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-12">
                                 <div class="submit-btn">
-                                    <button class="signup-btn btn-1" type="submit">Submit Now</button>
-                                    <span class="divider">OR</span>
+                                    <button class="signup-btn btn-1" type="submit">Save Password</button>
+                                    {{-- <span class="divider">OR</span>
                                     <button class="signup-btn"><img class="mr-20" src="/img/user/icon/google.svg"
-                                            alt="icon"> <a href="{{ route('oauth.google') }}">Sign Up With
-                                                Google</a></button>
+                                            alt="icon"> Sign Up With
+                                        Google</button> --}}
                                 </div>
                             </div>
                         </form>
